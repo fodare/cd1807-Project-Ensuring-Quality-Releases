@@ -25,3 +25,4 @@ override.tf.json
 *_override.tf.json
 
 *lock
+terraform/environments/test/.terraform.lock.hcl
