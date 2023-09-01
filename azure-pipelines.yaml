@@ -61,10 +61,10 @@ stages:
     # - task: TerraformTaskV4@4
     #   displayName: Terraform destroy
     #   inputs:
-        provider: 'azurerm'
-        command: 'destroy'
-        workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        environmentServiceNameAzureRM: 'temp-service-principal-connection'
+        # provider: 'azurerm'
+        # command: 'destroy'
+        # workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
+        # environmentServiceNameAzureRM: 'temp-service-principal-connection'
 
 
     - task: CmdLine@2
