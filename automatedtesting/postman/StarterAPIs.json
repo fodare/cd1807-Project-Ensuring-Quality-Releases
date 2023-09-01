@@ -28,7 +28,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"devops\",\n    \"salary\": \"2000\",\n    \"age\": \"10\"\n}",
+					"raw": "{\n    \"name\": \"{{$randomFirstName}}\",\n    \"salary\": \"{{$randomInt}}\",\n    \"age\": \"{{$randomInt}}\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -36,7 +36,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://dummy.restapiexample.com/api/v1/create",
+					"raw": "https://dummy.restapiexample.com/api/v1/create",
 					"protocol": "http",
 					"host": [
 						"dummy",
