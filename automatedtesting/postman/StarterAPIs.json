@@ -28,7 +28,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"{{name}}\",\n    \"salary\": \"{{salary}}\",\n    \"age\": \"{{age}}\"\n}",
+					"raw": "{\n    \"name\": \"devops\",\n    \"salary\": \"2000\",\n    \"age\": \"10\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
