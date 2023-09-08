@@ -133,24 +133,24 @@ stages:
       displayName: 'Upload Package'
       artifact: drop-perftests
 
-# - stage: Deploy
-#   jobs:
-#   - deployment: FakeRestAPI
-#     pool:
-#       name: Default
+- stage: Deploy
+  jobs:
+  - deployment: FakeRestAPI
+    pool:
+      name: Default
      
-#     environment: test-vm  
-#     strategy:
-#       runOnce:
-#         deploy:
-#           steps:
-#           - task: AzureWebApp@1
-#             displayName: 'Deploy Azure Web App'
-#             inputs:
-#               azureSubscription: ''     # ToDo
-#               appName: ''               # ToDo
-#               appType: webApp
-#               package: $(Pipeline.Workspace)/<artifact>/<archiveFile>       # ToDo: Use the published zip artifact. 
+    environment: test-vm  
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: AzureWebApp@1
+            displayName: 'Deploy Azure Web App'
+            inputs:
+              azureSubscription: 'Temp-connection'
+              appType: 'webAppLinux'
+              appName: 'sampleApplication-AppService'
+              package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)-fakerestapi.zip'
 #           #--------------------------------------------#    
 #           # Run JMeter test suite against the App Service
 #           - task: CmdLine@2
