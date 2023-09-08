@@ -90,16 +90,14 @@ stages:
       continueOnError: true
       # 'newman run TestSuite.Regression.json -e Test.environment.json --reporters cli,junit --reporter-junit-export TEST-Regression.xml'
       inputs:
-        script: 'newman run TestSuite.Regression.json'
+        script: 'newman run TestSuite.Regression.json --reporters cli,junit --reporter-junit-export TEST-Regression.xml'
         workingDirectory: $(System.DefaultWorkingDirectory)/automatedtesting/postman
 
     - task: PublishTestResults@2
       inputs:
         testResultsFormat: 'JUnit'
         testResultsFiles: '**/TEST-*.xml'
-        searchFolder:       # ToDo
         mergeTestResults: true
-        testRunTitle:       # ToDo
 
     - task: ArchiveFiles@2
       displayName: 'Archive UI Tests'
