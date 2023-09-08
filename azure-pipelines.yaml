@@ -7,7 +7,7 @@ pool:
 variables:
   # python.version: '3.7.6'
   # ToDo: Replace the service connection name as used in the DevOps project settings
-  azureServiceConnectionId: 'myServiceConnection'
+  azureServiceConnectionId: 'Temp-connection'
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
   # Environment name
@@ -29,9 +29,9 @@ stages:
         provider: 'azurerm'
         command: 'init'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        backendServiceArm: 'temp-service-principal-connection'
+        backendServiceArm: 'Temp-connection'
         backendAzureRmResourceGroupName: 'Azuredevops'
-        backendAzureRmStorageAccountName: 'tfstate794029105'
+        backendAzureRmStorageAccountName: 'tfstate2748819139'
         backendAzureRmContainerName: 'tfstate'
         backendAzureRmKey: 'test.terraform.tfstate'
 
@@ -43,13 +43,9 @@ stages:
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
 
     - task: DownloadSecureFile@1
-      displayName: Download secure files
+      displayName: Download SSH public key
       inputs:
         secureFile: 'azure_rsa.pub'
-        # name: udacity_public_key
-        # displayName: 
-        # inputs:
-        #   secureFile: 
 
     - task: TerraformTaskV3@3
       displayName: Terraform apply
@@ -57,7 +53,7 @@ stages:
         provider: 'azurerm'
         command: 'apply'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        environmentServiceNameAzureRM: 'temp-service-principal-connection'
+        environmentServiceNameAzureRM: 'Temp-connection'
 
     # - task: TerraformTaskV4@4
     #   displayName: Terraform destroy
