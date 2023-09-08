@@ -78,10 +78,12 @@ stages:
         script: 'newman run StarterAPIs.json'
         workingDirectory: $(System.DefaultWorkingDirectory)/automatedtesting/postman
 
-    - task: Delay@1
-      displayName: Sleep 1 min
+    - task: CmdLine@2
+      displayName: 30 Secs sleep
       inputs:
-        delayForMinutes: '1'
+        script: |
+          echo sleeping for 30 seconds
+          echo Dummy API has some throttling
 
     - task: CmdLine@2
       displayName: Run Regression Tests
