@@ -28,7 +28,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"{{$randomFirstName}}\",\n    \"salary\": \"{{$randomInt}}\",\n    \"age\": \"{{$randomInt}}\"\n}",
+					"raw": "{\n    \"name\": \"TestDeveloper\",\n    \"salary\": \"20000\",\n    \"age\": \"32\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
