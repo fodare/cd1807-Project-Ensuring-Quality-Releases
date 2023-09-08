@@ -75,7 +75,7 @@ stages:
       continueOnError: true
       # 'newman run TestSuite.Data-Validation.json -e Test.environment.json --reporters cli,junit --reporter-junit-export TEST-DataValidation.xml'
       inputs:
-        script: 'newman run StarterAPIs.json'
+        script: 'newman run StarterAPIs.json --reporters cli,junit --reporter-junit-export TEST-DataValidation.xml'
         workingDirectory: $(System.DefaultWorkingDirectory)/automatedtesting/postman
 
     - task: CmdLine@2
