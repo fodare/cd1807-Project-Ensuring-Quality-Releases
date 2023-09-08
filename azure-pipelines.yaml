@@ -83,7 +83,7 @@ stages:
       inputs:
         script: |
           echo sleeping for 30 seconds
-          echo Dummy API has some throttling
+          sleep 30 && echo Dummy API has some throttling
 
     - task: CmdLine@2
       displayName: Run Regression Tests
