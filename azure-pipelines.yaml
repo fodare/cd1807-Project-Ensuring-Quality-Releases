@@ -150,7 +150,7 @@ stages:
               azureSubscription: 'Temp-connection'
               appType: 'webAppLinux'
               appName: 'sampleApplication-AppService'
-              package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)-fakerestapi.zip'
+              package: '$(Pipeline.Workspace)/$(Build.BuildId)-fakerestapi.zip'
 #           #--------------------------------------------#    
 #           # Run JMeter test suite against the App Service
 #           - task: CmdLine@2
