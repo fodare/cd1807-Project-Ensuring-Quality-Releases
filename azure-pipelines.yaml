@@ -114,7 +114,7 @@ stages:
     - task: ArchiveFiles@2
       displayName: 'Archive FakeRestAPI'
       inputs:
-        rootFolderOrFile: 
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)/automatedtesting/jmeter/fakerestapi'
         includeRootFolder: false
         archiveType: 'zip'
         archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)-fakerestapi.zip'
@@ -125,7 +125,7 @@ stages:
     - task: ArchiveFiles@2
       displayName: 'Archive PerformanceTestSuite'
       inputs:
-        rootFolderOrFile: 
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)/automatedtesting/jmeter'
         includeRootFolder: false
         archiveType: 'zip'
         archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)-perftests.zip'
@@ -150,7 +150,7 @@ stages:
               azureSubscription: 'Temp-connection'
               appType: 'webAppLinux'
               appName: 'sampleApplication-AppService'
-              package: '$(Pipeline.Workspace)/$(Build.BuildId)-fakerestapi.zip'
+              package: '$(Build.ArtifactStagingDirectory)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip'
 #           #--------------------------------------------#    
 #           # Run JMeter test suite against the App Service
 #           - task: CmdLine@2
