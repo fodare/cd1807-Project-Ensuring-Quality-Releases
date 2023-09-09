@@ -130,7 +130,7 @@ stages:
     pool:
       name: Default
      
-    environment: test-vm  
+    # environment: test-vm  
     strategy:
       runOnce:
         deploy:
