@@ -141,11 +141,8 @@ stages:
               azureSubscription: 'Temp-connection'
               appType: 'webApp'
               appName: 'sampleApplication-AppService'
-              deployToSlotOrASE: true
-              resourceGroupName: 'test-rg'
-              slotName: 'production'
               package: '$(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip'
-              deploymentMethod: 'zipDeploy'
+              deploymentMethod: 'auto'
               
           - task: TerraformTaskV4@4
             displayName: Terraform destroy
