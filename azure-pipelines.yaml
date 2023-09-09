@@ -148,12 +148,13 @@ stages:
             displayName: 'Deploy Azure Web App'
             inputs:
               azureSubscription: 'Temp-connection'
-              appType: 'webAppLinux'
+              appType: 'webApp'
               appName: 'sampleApplication-AppService'
               deployToSlotOrASE: true
               resourceGroupName: 'test-rg'
               slotName: 'production'
               package: '$(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip'
+              deploymentMethod: 'zipDeploy'
 #           #--------------------------------------------#    
 #           # Run JMeter test suite against the App Service
 #           - task: CmdLine@2
