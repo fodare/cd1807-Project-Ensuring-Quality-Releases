@@ -55,15 +55,6 @@ stages:
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
         environmentServiceNameAzureRM: 'Temp-connection'
 
-    # - task: TerraformTaskV4@4
-    #   displayName: Terraform destroy
-    #   inputs:
-        # provider: 'azurerm'
-        # command: 'destroy'
-        # workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        # environmentServiceNameAzureRM: 'temp-service-principal-connection'
-
-
     - task: CmdLine@2
       displayName: Install Newman
       inputs:
@@ -155,6 +146,14 @@ stages:
               slotName: 'production'
               package: '$(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip'
               deploymentMethod: 'zipDeploy'
+              
+          - task: TerraformTaskV4@4
+            displayName: Terraform destroy
+            inputs:
+              provider: 'azurerm'
+              command: 'destroy'
+              workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
+              environmentServiceNameAzureRM: 'Temp-connection'
 #           #--------------------------------------------#    
 #           # Run JMeter test suite against the App Service
 #           - task: CmdLine@2
