@@ -9,10 +9,10 @@ import time
 def login(user, password):
     print('Starting the browser...')
     # --uncomment when running in Azure DevOps.
-    # options = ChromeOptions()
-    # options.add_argument("--headless")
-    # driver = webdriver.Chrome(options=options)
-    driver = webdriver.Chrome()
+    options = ChromeOptions()
+    options.add_argument("--headless")
+    driver = webdriver.Chrome(options=options)
+    # driver = webdriver.Chrome()
     print('Browser started successfully. Navigating to the demo page to login.')
     driver.get('https://www.saucedemo.com/')
     driver.find_element(By.NAME, 'user-name').send_keys(user)
