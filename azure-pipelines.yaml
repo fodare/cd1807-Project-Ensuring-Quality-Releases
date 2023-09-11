@@ -7,7 +7,7 @@ pool:
 variables:
   # python.version: '3.7.6'
   # ToDo: Replace the service connection name as used in the DevOps project settings
-  azureServiceConnectionId: 'Temp-connection'
+  azureServiceConnectionId: 'Temp-connection1'
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
   # Environment name
@@ -29,9 +29,9 @@ stages:
         provider: 'azurerm'
         command: 'init'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        backendServiceArm: 'Temp-connection'
+        backendServiceArm: 'Temp-connection1'
         backendAzureRmResourceGroupName: 'Azuredevops'
-        backendAzureRmStorageAccountName: 'tfstate2748819139'
+        backendAzureRmStorageAccountName: 'tfstate1950926069'
         backendAzureRmContainerName: 'tfstate'
         backendAzureRmKey: 'test.terraform.tfstate'
 
@@ -53,7 +53,7 @@ stages:
         provider: 'azurerm'
         command: 'apply'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        environmentServiceNameAzureRM: 'Temp-connection'
+        environmentServiceNameAzureRM: 'Temp-connection1'
 
     - task: CmdLine@2
       displayName: Install Newman
@@ -138,19 +138,19 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App'
             inputs:
-              azureSubscription: 'Temp-connection'
+              azureSubscription: 'Temp-connection1'
               appType: 'webApp'
               appName: 'sampleApplication-AppService'
               package: '$(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip'
               deploymentMethod: 'auto'
               
-          - task: TerraformTaskV4@4
-            displayName: Terraform destroy
-            inputs:
-              provider: 'azurerm'
-              command: 'destroy'
-              workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-              environmentServiceNameAzureRM: 'Temp-connection'
+          # - task: TerraformTaskV4@4
+          #   displayName: Terraform destroy
+          #   inputs:
+          #     provider: 'azurerm'
+          #     command: 'destroy'
+          #     workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
+          #     environmentServiceNameAzureRM: 'Temp-connection1'
 #           #--------------------------------------------#    
 #           # Run JMeter test suite against the App Service
 #           - task: CmdLine@2
