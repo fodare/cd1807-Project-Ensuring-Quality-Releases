@@ -27,3 +27,4 @@ override.tf.json
 *lock
 terraform/environments/test/.terraform.lock.hcl
 automatedtesting/jmeter/fakerestapi/.azure/config
+*venv/

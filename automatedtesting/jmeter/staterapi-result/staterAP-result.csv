@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1694427976230,908,GET All Activities,200,OK,Starter 1-1,text,true,,3109,191,1,5,https://sampleapplication-appservice.azurewebsites.net/api/Activities,908,0,720
+1694427977140,366,Get Authors,200,OK,Starter 1-1,text,true,,330,190,1,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors/2,366,0,177
+1694427977507,177,GET All Activities,200,OK,Starter 1-1,text,true,,3049,191,1,5,https://sampleapplication-appservice.azurewebsites.net/api/Activities,177,0,0
+1694427977684,189,Get Authors,200,OK,Starter 1-1,text,true,,330,190,1,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors/3,189,0,0
+1694427977873,180,GET All Activities,200,OK,Starter 1-1,text,true,,3079,191,1,5,https://sampleapplication-appservice.azurewebsites.net/api/Activities,180,0,0
+1694427978054,176,Get Authors,200,OK,Starter 1-1,text,true,,330,190,1,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors/3,176,0,0
+1694427978231,185,GET All Activities,200,OK,Starter 1-1,text,true,,3109,191,1,5,https://sampleapplication-appservice.azurewebsites.net/api/Activities,185,0,0
+1694427978416,203,Get Authors,200,OK,Starter 1-1,text,true,,330,190,1,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors/2,203,0,0
+1694427978620,198,GET All Activities,200,OK,Starter 1-1,text,true,,3109,191,1,4,https://sampleapplication-appservice.azurewebsites.net/api/Activities,198,0,0
+1694427978818,207,Get Authors,200,OK,Starter 1-1,text,true,,330,190,1,4,http://sampleapplication-appservice.azurewebsites.net/api/Authors/1,207,0,0
