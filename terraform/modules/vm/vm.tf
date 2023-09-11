@@ -31,7 +31,7 @@ resource "azurerm_linux_virtual_machine" "test-ni" {
   resource_group_name   = var.resource_group_name
   size                  = "Standard_DS2_v2"
   admin_username        = var.admin_username
-  network_interface_ids = [azurerm_network_interface.test-ni.id]
+  network_interface_ids = [azurerm_network_interface.test-ni.id, azurerm_subnet.test-subn.id]
   admin_ssh_key {
     username   = "adminUser"
     public_key = file("~/.ssh/azure_rsa.pub")
