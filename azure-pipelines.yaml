@@ -162,7 +162,7 @@ stages:
             #     cat jmeter.log   
               script: |
                 unzip -o $(Build.BuildId)-perftests.zip
-                ./apache-jmeter-5.6/bin/jmeter -n -t Starter.jmx -j jmeter.log -f
+                ~/Dev/Projects/Project-DevOps/apache-jmeter-5.6/bin/jmeter -n -t Starter.jmx -j jmeter.log -f
                 cat jmeter.log                                                   
               workingDirectory: '$(Pipeline.Workspace)/drop-perftests/$(Build.BuildId)-perftests.zip'    
               
