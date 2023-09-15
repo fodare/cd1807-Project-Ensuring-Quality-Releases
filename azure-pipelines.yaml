@@ -1,4 +1,9 @@
-trigger:
+parameters:
+  - name: Clean
+    displayName: Clean
+    default: true
+
+appendCommitMessageToRunName::
 - main
 
 pool:
@@ -144,10 +149,11 @@ stages:
               package: '$(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip'
               deploymentMethod: 'auto'
           - task: CmdLine@2
+            displayName: Jmeter test
             inputs:
               script: |
                 unzip -o $(Build.BuildId)-perftests.zip
-                ~/Dev/Projects/Project-DevOps/apache-jmeter-5.6/bin/jmeter -n -t Starter.jmx -j jmeter.log -f
+                ~/Dev/Projects/Project-DevOps/apache-jmeter-5.6/bin/jmeter -n -t Starter.jmx -j jmeter.log
                 cat jmeter.log                                                   
               workingDirectory: '$(Pipeline.Workspace)/drop-perftests'
               
