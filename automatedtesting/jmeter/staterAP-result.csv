@@ -1,61 +1,8 @@
 timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1694427976232,590,Get Book,200,OK,Endurance Test 3-1,text,true,,4424,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Books/3,590,0,333
-1694427976224,733,Get Authors,200,OK,Stress Test 2-1,text,true,,31723,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors,540,0,341
-1694427976822,176,GET Book cover photo,200,OK,Endurance Test 3-1,text,true,,358,165,2,5,http://sampleapplication-appservice.azurewebsites.net/books/covers/3,176,0,0
-1694427976230,908,GET All Activities,200,OK,Starter 1-1,text,true,,3109,191,1,5,https://sampleapplication-appservice.azurewebsites.net/api/Activities,908,0,720
-1694427976958,181,Get Books,200,OK,Stress Test 2-1,text,true,,405,166,2,5,http://sampleapplication-appservice.azurewebsites.net/authors/books/1,181,0,0
-1694427976727,431,Get Book,200,OK,Endurance Test 3-2,text,true,,5799,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Books/5,431,0,185
-1694427976998,175,Get user,200,OK,Endurance Test 3-1,text,true,,310,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Users/3,175,0,0
-1694427977139,193,Get Authors,200,OK,Stress Test 2-1,text,true,,31723,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors,185,0,0
-1694427977158,181,GET Book cover photo,200,OK,Endurance Test 3-2,text,true,,358,165,2,5,http://sampleapplication-appservice.azurewebsites.net/books/covers/5,181,0,0
-1694427977174,239,Get Book,200,OK,Endurance Test 3-1,text,true,,4391,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Books/2,239,0,0
-1694427976726,735,Get Authors,200,OK,Stress Test 2-2,text,true,,47615,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors,374,0,178
-1694427977140,366,Get Authors,200,OK,Starter 1-1,text,true,,330,190,1,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors/2,366,0,177
-1694427977333,175,Get Books,200,OK,Stress Test 2-1,text,true,,549,166,2,5,http://sampleapplication-appservice.azurewebsites.net/authors/books/1,175,0,0
-1694427977339,177,Get user,200,OK,Endurance Test 3-2,text,true,,310,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Users/5,177,0,0
-1694427977413,183,GET Book cover photo,200,OK,Endurance Test 3-1,text,true,,358,165,2,5,http://sampleapplication-appservice.azurewebsites.net/books/covers/2,183,0,0
-1694427977461,178,Get Books,200,OK,Stress Test 2-2,text,true,,405,166,2,5,http://sampleapplication-appservice.azurewebsites.net/authors/books/4,178,0,0
-1694427977507,177,GET All Activities,200,OK,Starter 1-1,text,true,,3049,191,1,5,https://sampleapplication-appservice.azurewebsites.net/api/Activities,177,0,0
-1694427977508,191,Get Authors,200,OK,Stress Test 2-1,text,true,,31723,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors,187,0,0
-1694427977518,243,Get Book,200,OK,Endurance Test 3-2,text,true,,4773,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Books/5,243,0,0
-1694427977596,177,Get user,200,OK,Endurance Test 3-1,text,true,,310,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Users/2,177,0,0
-1694427977640,181,Get Authors,200,OK,Stress Test 2-2,text,true,,31723,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors,180,0,0
-1694427977684,189,Get Authors,200,OK,Starter 1-1,text,true,,330,190,1,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors/3,189,0,0
-1694427977700,180,Get Books,200,OK,Stress Test 2-1,text,true,,561,166,2,5,http://sampleapplication-appservice.azurewebsites.net/authors/books/4,180,0,0
-1694427977761,178,GET Book cover photo,200,OK,Endurance Test 3-2,text,true,,358,165,2,5,http://sampleapplication-appservice.azurewebsites.net/books/covers/5,178,0,0
-1694427977822,179,Get Books,200,OK,Stress Test 2-2,text,true,,549,166,2,5,http://sampleapplication-appservice.azurewebsites.net/authors/books/1,179,0,0
-1694427977773,237,Get Book,200,OK,Endurance Test 3-1,text,true,,5401,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Books/2,237,0,0
-1694427977873,180,GET All Activities,200,OK,Starter 1-1,text,true,,3079,191,1,5,https://sampleapplication-appservice.azurewebsites.net/api/Activities,180,0,0
-1694427977880,187,Get Authors,200,OK,Stress Test 2-1,text,true,,63507,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors,178,0,0
-1694427977939,186,Get user,200,OK,Endurance Test 3-2,text,true,,310,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Users/5,186,0,0
-1694427978001,184,Get Authors,200,OK,Stress Test 2-2,text,true,,31723,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors,179,0,0
-1694427978011,183,GET Book cover photo,200,OK,Endurance Test 3-1,text,true,,358,165,2,5,http://sampleapplication-appservice.azurewebsites.net/books/covers/2,183,0,0
-1694427978054,176,Get Authors,200,OK,Starter 1-1,text,true,,330,190,1,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors/3,176,0,0
-1694427978067,180,Get Books,200,OK,Stress Test 2-1,text,true,,486,166,2,5,http://sampleapplication-appservice.azurewebsites.net/authors/books/4,180,0,0
-1694427978185,179,Get Books,200,OK,Stress Test 2-2,text,true,,561,166,2,5,http://sampleapplication-appservice.azurewebsites.net/authors/books/5,179,0,0
-1694427978126,245,Get Book,200,OK,Endurance Test 3-2,text,true,,4152,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Books/1,245,0,0
-1694427978194,177,Get user,200,OK,Endurance Test 3-1,text,true,,310,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Users/2,177,0,0
-1694427978231,185,GET All Activities,200,OK,Starter 1-1,text,true,,3109,191,1,5,https://sampleapplication-appservice.azurewebsites.net/api/Activities,185,0,0
-1694427978247,187,Get Authors,200,OK,Stress Test 2-1,text,true,,38123,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors,183,0,0
-1694427978365,254,Get Authors,200,OK,Stress Test 2-2,text,true,,47615,162,2,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors,250,0,0
-1694427978372,247,GET Book cover photo,200,OK,Endurance Test 3-2,text,true,,358,165,2,5,http://sampleapplication-appservice.azurewebsites.net/books/covers/1,247,0,0
-1694427978434,185,Get Books,200,OK,Stress Test 2-1,text,true,,405,166,2,5,http://sampleapplication-appservice.azurewebsites.net/authors/books/3,185,0,0
-1694427978416,203,Get Authors,200,OK,Starter 1-1,text,true,,330,190,1,5,http://sampleapplication-appservice.azurewebsites.net/api/Authors/2,203,0,0
-1694427978372,248,Get Book,200,OK,Endurance Test 3-1,text,true,,3831,162,2,4,http://sampleapplication-appservice.azurewebsites.net/api/Books/5,248,0,0
-1694427978619,198,Get user,200,OK,Endurance Test 3-2,text,true,,310,162,2,4,http://sampleapplication-appservice.azurewebsites.net/api/Users/1,198,0,0
-1694427978621,196,GET Book cover photo,200,OK,Endurance Test 3-1,text,true,,358,165,2,4,http://sampleapplication-appservice.azurewebsites.net/books/covers/5,196,0,0
-1694427978619,198,Get Books,200,OK,Stress Test 2-2,text,true,,486,166,1,4,http://sampleapplication-appservice.azurewebsites.net/authors/books/4,198,0,0
-1694427978620,198,GET All Activities,200,OK,Starter 1-1,text,true,,3109,191,1,4,https://sampleapplication-appservice.azurewebsites.net/api/Activities,198,0,0
-1694427978819,206,Get user,200,OK,Endurance Test 3-1,text,true,,310,162,2,4,http://sampleapplication-appservice.azurewebsites.net/api/Users/5,206,0,0
-1694427978818,207,Get Authors,200,OK,Starter 1-1,text,true,,330,190,1,4,http://sampleapplication-appservice.azurewebsites.net/api/Authors/1,207,0,0
-1694427978818,208,Get Authors,200,OK,Stress Test 2-2,text,true,,31723,162,1,4,http://sampleapplication-appservice.azurewebsites.net/api/Authors,207,0,0
-1694427978818,241,Get Book,200,OK,Endurance Test 3-2,text,true,,4727,162,2,3,http://sampleapplication-appservice.azurewebsites.net/api/Books/3,241,0,0
-1694427979026,200,Get Books,200,OK,Stress Test 2-2,text,true,,477,166,1,3,http://sampleapplication-appservice.azurewebsites.net/authors/books/2,200,0,0
-1694427979059,185,GET Book cover photo,200,OK,Endurance Test 3-2,text,true,,358,165,2,2,http://sampleapplication-appservice.azurewebsites.net/books/covers/3,185,0,0
-1694427979026,244,Get Book,200,OK,Endurance Test 3-1,text,true,,5338,162,2,2,http://sampleapplication-appservice.azurewebsites.net/api/Books/4,244,0,0
-1694427979245,186,Get user,200,OK,Endurance Test 3-2,text,true,,310,162,2,2,http://sampleapplication-appservice.azurewebsites.net/api/Users/3,186,0,0
-1694427979271,178,GET Book cover photo,200,OK,Endurance Test 3-1,text,true,,358,165,2,2,http://sampleapplication-appservice.azurewebsites.net/books/covers/4,178,0,0
-1694427979450,186,Get user,200,OK,Endurance Test 3-1,text,true,,310,162,2,2,http://sampleapplication-appservice.azurewebsites.net/api/Users/4,186,0,0
-1694427979432,247,Get Book,200,OK,Endurance Test 3-2,text,true,,4484,162,1,1,http://sampleapplication-appservice.azurewebsites.net/api/Books/5,247,0,0
-1694427979679,185,GET Book cover photo,200,OK,Endurance Test 3-2,text,true,,358,165,1,1,http://sampleapplication-appservice.azurewebsites.net/books/covers/5,185,0,0
-1694427979864,181,Get user,200,OK,Endurance Test 3-2,text,true,,310,162,1,1,http://sampleapplication-appservice.azurewebsites.net/api/Users/5,181,0,0
+1694816624279,566,Get Book,200,OK,Endurance Test 3-1,text,true,,4708,162,1,3,http://sampleapplication-appservice.azurewebsites.net/api/Books/1,565,0,275
+1694816624279,665,Get Authors,200,OK,Stress Test 2-1,text,true,,35563,162,1,3,http://sampleapplication-appservice.azurewebsites.net/api/Authors,483,0,275
+1694816624845,180,GET Book cover photo,200,OK,Endurance Test 3-1,text,true,,358,165,1,3,http://sampleapplication-appservice.azurewebsites.net/books/covers/1,180,0,0
+1694816625026,246,Get user,200,OK,Endurance Test 3-1,text,true,,310,162,1,3,http://sampleapplication-appservice.azurewebsites.net/api/Users/1,246,0,0
+1694816624945,327,Get Books,200,OK,Stress Test 2-1,text,true,,405,166,1,3,http://sampleapplication-appservice.azurewebsites.net/authors/books/2,327,0,0
+1694816624282,991,GET All Activities,200,OK,Starter 1-1,text,true,,3109,191,1,1,https://sampleapplication-appservice.azurewebsites.net/api/Activities,991,0,676
+1694816625275,405,Get Authors,200,OK,Starter 1-1,text,true,,330,190,1,1,http://sampleapplication-appservice.azurewebsites.net/api/Authors/1,405,0,200
