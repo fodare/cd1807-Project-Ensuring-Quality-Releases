@@ -29,9 +29,9 @@ stages:
         provider: 'azurerm'
         command: 'init'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        backendServiceArm: 'Temp-connection1'
+        backendServiceArm: 'Temp-connection2'
         backendAzureRmResourceGroupName: 'Azuredevops'
-        backendAzureRmStorageAccountName: 'tfstate1950926069'
+        backendAzureRmStorageAccountName: 'tfstate11121038'
         backendAzureRmContainerName: 'tfstate'
         backendAzureRmKey: 'test.terraform.tfstate'
 
@@ -53,7 +53,7 @@ stages:
         provider: 'azurerm'
         command: 'apply'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        environmentServiceNameAzureRM: 'Temp-connection1'
+        environmentServiceNameAzureRM: 'Temp-connection2'
 
     - task: CmdLine@2
       displayName: Install Newman
@@ -138,7 +138,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App'
             inputs:
-              azureSubscription: 'Temp-connection1'
+              azureSubscription: 'Temp-connection2'
               appType: 'webApp'
               appName: 'sampleApplication-AppService'
               package: '$(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip'
