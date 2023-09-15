@@ -1,8 +1,4 @@
 timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1694816624279,566,Get Book,200,OK,Endurance Test 3-1,text,true,,4708,162,1,3,http://sampleapplication-appservice.azurewebsites.net/api/Books/1,565,0,275
-1694816624279,665,Get Authors,200,OK,Stress Test 2-1,text,true,,35563,162,1,3,http://sampleapplication-appservice.azurewebsites.net/api/Authors,483,0,275
-1694816624845,180,GET Book cover photo,200,OK,Endurance Test 3-1,text,true,,358,165,1,3,http://sampleapplication-appservice.azurewebsites.net/books/covers/1,180,0,0
-1694816625026,246,Get user,200,OK,Endurance Test 3-1,text,true,,310,162,1,3,http://sampleapplication-appservice.azurewebsites.net/api/Users/1,246,0,0
-1694816624945,327,Get Books,200,OK,Stress Test 2-1,text,true,,405,166,1,3,http://sampleapplication-appservice.azurewebsites.net/authors/books/2,327,0,0
-1694816624282,991,GET All Activities,200,OK,Starter 1-1,text,true,,3109,191,1,1,https://sampleapplication-appservice.azurewebsites.net/api/Activities,991,0,676
-1694816625275,405,Get Authors,200,OK,Starter 1-1,text,true,,330,190,1,1,http://sampleapplication-appservice.azurewebsites.net/api/Authors/1,405,0,200
+1694820965532,522,Get Authors,403,Site Disabled,Stress Test 2-1,text,false,,2475,162,1,3,http://sampleapplication-appservice.azurewebsites.net/api/Authors,521,0,304
+1694820965531,523,Get Book,403,Site Disabled,Endurance Test 3-1,text,false,,2475,162,1,3,http://sampleapplication-appservice.azurewebsites.net/api/Books/1,523,0,305
+1694820965531,1235,GET All Activities,403,Site Disabled,Starter 1-1,text,false,,2475,191,1,1,https://sampleapplication-appservice.azurewebsites.net/api/Activities,1234,0,1025
