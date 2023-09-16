@@ -16,6 +16,11 @@ variables:
 stages:
 - stage: Build
   jobs:
+  - job: clean
+    displayName: Clean dir
+    workspace:
+      clean: all
+  
   - job: BuildInfrastructure
     steps:
     - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller@0
@@ -195,7 +200,7 @@ stages:
                     sudo ln -s $PWD/chromedriver /usr/local/bin/chromedriver
                 fi
                 export PATH=$PATH:/home/testuser/app
-                sudo python3 -m venv venv -y
+                sudo python3 -m venv venv
                 source venv/bin/activate
                 pip install selenium
                 echo "Starting Selenium Tests"
