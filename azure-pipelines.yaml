@@ -151,14 +151,14 @@ stages:
                 ~/Dev/Projects/Project-DevOps/apache-jmeter-5.6/bin/jmeter -n -t Starter.jmx -j jmeter.log
                 cat jmeter.log                                                   
               workingDirectory: '$(Pipeline.Workspace)/drop-perftests'
-
-
+              
   - deployment: VMDeploy
+    dependsOn: FakeRestAPI
     displayName: Selenium Tests
     environment:
       name: Test-vm-sele
       resourceType: VirtualMachine
-      tags: selenium
+      # tags: selenium
     strategy:
       runOnce:
         deploy:
