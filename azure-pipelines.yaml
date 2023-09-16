@@ -188,6 +188,6 @@ stages:
                 cd cd1807-Project-Ensuring-Quality-Releases/automatedtesting/selenium/
                 pip install selenium
                 echo "Starting Selenium Tests"
-                python3 login.py >> selenium.log
+                python3 login.py >> ~/azagent/logs/selenium.log
                 cat selenium.log
                 echo "Completed Selenium Tests. Check selenium.log for results."
