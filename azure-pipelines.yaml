@@ -34,9 +34,9 @@ stages:
         provider: 'azurerm'
         command: 'init'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        backendServiceArm: 'Temp-connection2'
+        backendServiceArm: 'Temp connection 3'
         backendAzureRmResourceGroupName: 'Azuredevops'
-        backendAzureRmStorageAccountName: 'tfstate11121038'
+        backendAzureRmStorageAccountName: 'tfstate603110144'
         backendAzureRmContainerName: 'tfstate'
         backendAzureRmKey: 'test.terraform.tfstate'
 
@@ -58,7 +58,7 @@ stages:
         provider: 'azurerm'
         command: 'apply'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        environmentServiceNameAzureRM: 'Temp-connection2'
+        environmentServiceNameAzureRM: 'Temp connection 3'
 
     - task: CmdLine@2
       displayName: Install Newman
@@ -142,7 +142,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App'
             inputs:
-              azureSubscription: 'Temp-connection2'
+              azureSubscription: 'Temp connection 3'
               appType: 'webApp'
               appName: 'sampleApplication-AppService'
               package: '$(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip'
@@ -160,8 +160,8 @@ stages:
     dependsOn: FakeRestAPI
     displayName: Selenium Tests
     environment:
-      name: vmMachine
-      resourceType: VirtualMachine
+      name: Default
+      # resourceType: VirtualMachine
       # tags: selenium
     strategy:
       runOnce:
@@ -178,14 +178,8 @@ stages:
                 
                 sudo apt-get update -y
                 sudo apt-get upgrade -y
-                sudo apt-get install python3-pip -y
-                sudo apt-get install unzip -y
-                sudo apt install python3-pip
-                sudo pip install webdriver_manager -y
-                sudo pip3 install selenium
-                python3 -m pip install -U selenium
                 cd ~/
-                DIR=/home/testuser/app
+                DIR=/home/azureUser/app
                 if [ ! -d "$DIR" ]; then
                     mkdir app
                 fi
