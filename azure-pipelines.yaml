@@ -183,7 +183,7 @@ stages:
                 if [ ! -d "$DIR" ]; then
                     mkdir app
                 fi
-                mv /home/root-admin/Downloads/myagent/~/Dev/11/drop-uitests/$(Build.BuildId)-uitests.zip app
+                mv /home/azureUser/azagent/_work/1/drop-uitests/$(Build.BuildId)-uitests.zip app
                 cd app
                 unzip -o $(Build.BuildId)-uitests.zip
                 export PATH=$PATH:/home/azureUser/app
