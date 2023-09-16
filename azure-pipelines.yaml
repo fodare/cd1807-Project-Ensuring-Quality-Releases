@@ -180,7 +180,7 @@ stages:
                 sudo apt-get upgrade -y
                 sudo apt-get install python3-pip -y
                 sudo apt-get install unzip -y
-                sudo apt-get install -y chromium-browser
+                sudo apt-get install chromium-browser -y
                 sudo apt install python3-pip
                 sudo pip install webdriver_manager -y
                 sudo pip3 install selenium
