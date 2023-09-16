@@ -167,6 +167,7 @@ stages:
       runOnce:
         deploy:
           steps:
+          
           - download: current
             artifact: drop-uitests
             
@@ -174,19 +175,14 @@ stages:
             inputs:
               targetType: 'inline'
               script: |
-                #! /bin/bash
+                mkdir app
                 
-                sudo apt-get update -y
-                sudo apt-get upgrade -y
-                cd ~/
-                DIR=/home/azureUser/app
-                if [ ! -d "$DIR" ]; then
-                    mkdir app
-                fi
-                mv /home/root-admin/Downloads/myagent/~/Dev/11/drop-uitests/$(Build.BuildId)-uitests.zip app
                 cd app
-                unzip -o $(Build.BuildId)-uitests.zip
-                export PATH=$PATH:/home/azureUser/app
+                
+                git clone https://github.com/fodare/cd1807-Project-Ensuring-Quality-Releases.git
+                
+                cd cd1807-Project-Ensuring-Quality-Releases/automatedtesting/selenium/
+                
                 pip install selenium
                 echo "Starting Selenium Tests"
                 python3 login.py >> selenium.log
