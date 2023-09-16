@@ -193,5 +193,6 @@ stages:
                 fi
                 export PATH=$PATH:/home/testuser/app
                 echo "Starting Selenium Tests"
+                pip install selenium
                 python3 login.py >> selenium.log
                 echo "Completed Selenium Tests. Check selenium.log for results."
