@@ -195,6 +195,9 @@ stages:
                     sudo ln -s $PWD/chromedriver /usr/local/bin/chromedriver
                 fi
                 export PATH=$PATH:/home/testuser/app
+                sudo python3 -m venv venv -y
+                source venv/bin/activate
+                pip install selenium
                 echo "Starting Selenium Tests"
                 python3 login.py >> selenium.log
                 echo "Completed Selenium Tests. Check selenium.log for results."
