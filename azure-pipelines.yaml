@@ -155,7 +155,7 @@ stages:
     displayName: Selenium Tests
     environment:
       name: testvm
-      # resourceType: VirtualMachine
+      resourceType: VirtualMachine
       # tags: selenium
     strategy:
       runOnce:
