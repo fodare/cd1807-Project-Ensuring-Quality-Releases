@@ -186,5 +186,5 @@ stages:
                 
                 python3 login.py >> ~/app/selenium.log
                 python3 login.py >> ~/app/selenium.txt
-                cat selenium.txt
+                cat ~/app/selenium.log
                 echo "Completed Selenium Tests. Check selenium.log for results."
