@@ -154,7 +154,7 @@ stages:
     dependsOn: FakeRestAPI
     displayName: Selenium Tests
     environment:
-      name: testvm
+      name: test-vm
       resourceType: VirtualMachine
       # tags: selenium
     strategy:
