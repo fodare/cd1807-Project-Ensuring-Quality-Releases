@@ -58,7 +58,7 @@ stages:
         provider: 'azurerm'
         command: 'apply'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        environmentServiceNameAzureRM: 'Temp connection 3'
+        environmentServiceNameAzureRM: 'tempConnection'
         
     - task: CmdLine@2
       displayName: Run Data Validation Tests
