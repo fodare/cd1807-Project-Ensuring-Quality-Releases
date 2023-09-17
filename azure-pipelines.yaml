@@ -162,8 +162,8 @@ stages:
         deploy:
           steps:
           
-          - download: current
-            artifact: drop-uitests
+          # - download: current
+          #   artifact: drop-uitests
             
           - task: Bash@3
             inputs:
