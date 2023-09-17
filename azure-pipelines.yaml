@@ -183,9 +183,7 @@ stages:
                 cd cd1807-Project-Ensuring-Quality-Releases/automatedtesting/selenium/
                 pip install selenium
                 echo "Starting Selenium Tests"
-                rm -rf logs
-                mkdir logs
-                python3 login.py >> /logs/selenium.log
-                python3 login.py >> /logs/selenium.txt
-                cat /logs/selenium.txt
+                python3 login.py >> selenium.log
+                python3 login.py >> selenium.txt
+                cat selenium.txt
                 echo "Completed Selenium Tests. Check selenium.log for results."
