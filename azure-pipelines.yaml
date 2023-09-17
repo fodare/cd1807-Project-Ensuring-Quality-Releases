@@ -184,5 +184,5 @@ stages:
                 echo "Starting Selenium Tests"
                 mkdir ~/azagent/logs
                 python3 login.py >> ~/azagent/logs/selenium.log
-                cat selenium.log
+                cat ~/azagent/logs/selenium.log
                 echo "Completed Selenium Tests. Check selenium.log for results."
