@@ -1,3 +1,0 @@
-Starting the browser...
-Browser started successfully. Navigating to the demo page to login.
-User loggedin successfully...!
