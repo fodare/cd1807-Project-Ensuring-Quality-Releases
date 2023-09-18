@@ -1,10 +1,10 @@
-2023-09-17 14:56:43.627932 (INFO): Starting the browser...
-2023-09-17 14:56:44.711829 (INFO): Browser started successfully. Navigating to the demo page to login.
-2023-09-17 14:56:48.709904 (INFO): User loggedin successfully...!
-2023-09-17 14:56:51.769209 (INFO): Starting cart item test....!
-2023-09-17 14:56:52.539384 (INFO): Browser started successfully. Navigating to product catalog...!
-2023-09-17 14:56:53.366515 (INFO): Successfully navigated to the products page!
-2023-09-17 14:56:53.668728 (INFO): Added all products to cart.
-2023-09-17 14:56:53.692920 (INFO): Cart item count: 6
-2023-09-17 14:56:53.692938 (INFO): Removing cart items .....!
-2023-09-17 14:56:54.017158 (INFO): Successfully removed cart items!
+2023-09-18 10:21:25 (INFO): Starting the browser...
+2023-09-18 10:21:26 (INFO): Browser started successfully. Navigating to the demo page to login.
+2023-09-18 10:21:30 (INFO): User loggedin successfully...!
+2023-09-18 10:21:33 (INFO): Starting cart item test....!
+2023-09-18 10:21:34 (INFO): Browser started successfully. Navigating to product catalog...!
+2023-09-18 10:21:34 (INFO): Successfully navigated to the products page!
+2023-09-18 10:21:35 (INFO): Added all products to cart.
+2023-09-18 10:21:35 (INFO): Cart item count: 6
+2023-09-18 10:21:35 (INFO): Removing cart items .....!
+2023-09-18 10:21:35 (INFO): Successfully removed cart items!
