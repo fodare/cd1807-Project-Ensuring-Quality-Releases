@@ -33,4 +33,5 @@ Feel free to submit PRs to this repo should you have any proposed changes.
 
 ## Custom logs forwarding
 
+See Azure documentation: <https://learn.microsoft.com/EN-us/azure/azure-monitor/agents/data-collection-text-log?tabs=portal>
 See : <https://www.youtube.com/watch?v=8Vl1BIGXHV0>
