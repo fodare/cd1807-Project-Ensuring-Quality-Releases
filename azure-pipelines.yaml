@@ -34,9 +34,9 @@ stages:
         provider: 'azurerm'
         command: 'init'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        backendServiceArm: 'tempConnection'
+        backendServiceArm: 'TempConnection'
         backendAzureRmResourceGroupName: 'Azuredevops'
-        backendAzureRmStorageAccountName: 'tfstate46441138'
+        backendAzureRmStorageAccountName: 'tfstate309048393'
         backendAzureRmContainerName: 'tfstate'
         backendAzureRmKey: 'test.terraform.tfstate'
 
@@ -58,7 +58,7 @@ stages:
         provider: 'azurerm'
         command: 'apply'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        environmentServiceNameAzureRM: 'tempConnection'
+        environmentServiceNameAzureRM: 'TempConnection'
         
     - task: CmdLine@2
       displayName: Run Data Validation Tests
@@ -136,7 +136,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App'
             inputs:
-              azureSubscription: 'tempConnection'
+              azureSubscription: 'TempConnection'
               appType: 'webApp'
               appName: 'sampleApplication-AppService'
               package: '$(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip'
