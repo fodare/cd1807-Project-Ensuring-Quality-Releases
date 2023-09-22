@@ -192,6 +192,6 @@ stages:
                 cd cd1807-Project-Ensuring-Quality-Releases/automatedtesting/selenium/
                 
                 echo "Starting Selenium Tests"
-                python3 lgoin.py >> ~/app/selenium.log
+                python3 login.py >> ~/app/selenium.log
                 cat ~/app/selenium.log
                 echo "Completed Sleenium Tests. Check selenium.log for results."
