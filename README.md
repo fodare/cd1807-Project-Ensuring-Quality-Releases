@@ -11,6 +11,17 @@ This repository contains the starter code for the **Ensuring Quality Releases** 
 
 Feel free to submit PRs to this repo should you have any proposed changes.
 
+## Tasks
+
+- Terraform: Create a test VM.
+- Terraform: Create an App Service for a Fake-REST API.
+- Postman CLI: Run and publish test result.
+- JMeter CLI: Run and publish JMeter stress tests, performance test.
+- Create a Test VM and deploy selenium test scripts to VM.
+- From test VM, run UI test scripts and push test result logs to Azure Monitor.
+- Create an Azure monitor alert to monitor changes to App Service.
+- Destroy resources.
+
 ## VM selenium set up
 
 - Install chrome
@@ -34,4 +45,3 @@ Feel free to submit PRs to this repo should you have any proposed changes.
 ## Custom logs forwarding
 
 See Azure documentation: <https://learn.microsoft.com/EN-us/azure/azure-monitor/agents/data-collection-text-log?tabs=portal>
-See : <https://www.youtube.com/watch?v=8Vl1BIGXHV0>

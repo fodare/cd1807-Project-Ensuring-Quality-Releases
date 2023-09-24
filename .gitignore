@@ -28,3 +28,4 @@ override.tf.json
 terraform/environments/test/.terraform.lock.hcl
 automatedtesting/jmeter/fakerestapi/.azure/config
 *venv/
+.vscode/ltex.hiddenFalsePositives.en-GB.txt
